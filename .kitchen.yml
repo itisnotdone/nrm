@@ -8,8 +8,7 @@ provisioner:
   # For example:
   #   always_update_cookbooks: <%= !ENV['CI'] %>
   always_update_cookbooks: true
-  install_script_url: >
-    http://def-www.default.don/site/chef-bootstrap/install_chef_script_for_lxd.sh
+  install_strategy: once
 
 transport:
   name: sftp
